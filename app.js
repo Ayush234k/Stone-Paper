@@ -16,7 +16,7 @@ let userT = 0;
 let compT = 0;
 
 const checkWinner = (e) => {
-    const userChoice = e.name;
+    const userChoice = e.getAttribute("id");
     const compChoice = arr[Math.floor(Math.random() * arr.length)];
     if(userChoice === "stone"){
         if(compChoice === "paper"){
